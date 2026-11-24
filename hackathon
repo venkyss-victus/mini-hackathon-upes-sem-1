@@ -1,0 +1,642 @@
+#include <stdio.h>
+
+int main()
+{
+    int start, end;
+
+    printf("====================================\n");
+    printf("     UPES CAMPUS NAVIGATION\n");
+    printf("====================================\n");
+
+    printf("\n1. Main Gate");
+    printf("\n2. Food Court");
+    printf("\n3. Frisco");
+    printf("\n4. Chai Garam");
+    printf("\n5. Tulip");
+    printf("\n6. Team Orange");
+    printf("\n7. Girls Hostel");
+    printf("\n8. Boys Hostel");
+    printf("\n9. Gandhi Chowk");
+    printf("\n10. Block 1");
+    printf("\n11. Block 2");
+    printf("\n12. Block 3");
+    printf("\n13. Block 4");
+    printf("\n14. Block 5");
+    printf("\n15. Block 6");
+    printf("\n16. Block 7");
+    printf("\n17. Block 8");
+    printf("\n18. Block 9");
+    printf("\n19. Block 10");
+    printf("\n20. Block 11");
+    printf("\n21. Hubble");
+    printf("\n22. Lab");
+
+    printf("\n\nEnter starting location: ");
+    scanf("%d", &start);
+
+    printf("Enter destination: ");
+    scanf("%d", &end);
+
+    if(start < 1 || start > 22 || end < 1 || end > 22)
+    {
+        printf("\nInvalid location selected!\n");
+        return 0;
+    }
+
+    if(start == end)
+    {
+        printf("\nYou are already at your destination!\n");
+        return 0;
+    }
+
+    printf("\n====================================\n");
+    printf("            YOUR ROUTE\n");
+    printf("====================================\n\n");
+
+    switch(start)
+    {
+        case 1:
+            switch(end)
+            {
+                case 2:
+                    printf("Main Gate -> Food Court");
+                    return 0;
+                case 21:
+                    printf("Main Gate -> Hubble");
+                    return 0;
+                case 14:
+                    printf("Main Gate -> Hubble -> Block 5");
+                    return 0;
+                case 13:
+                    printf("Main Gate -> Hubble -> Block 5 -> Block 4");
+                    return 0;
+                case 4:
+                    printf("Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam");
+                    return 0;
+                case 10:
+                    printf("Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 1");
+                    return 0;
+                case 11:
+                    printf("Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2");
+                    return 0;
+                case 12:
+                    printf("Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3");
+                    return 0;
+                case 3:
+                    printf("Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco");
+                    return 0;
+            }
+            printf("Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco -> Gandhi Chowk");
+            break;
+
+        case 2:
+            switch(end)
+            {
+                case 1:
+                    printf("Food Court -> Main Gate");
+                    return 0;
+                case 21:
+                    printf("Food Court -> Main Gate -> Hubble");
+                    return 0;
+                case 14:
+                    printf("Food Court -> Main Gate -> Hubble -> Block 5");
+                    return 0;
+                case 13:
+                    printf("Food Court -> Main Gate -> Hubble -> Block 5 -> Block 4");
+                    return 0;
+                case 4:
+                    printf("Food Court -> Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam");
+                    return 0;
+                case 10:
+                    printf("Food Court -> Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 1");
+                    return 0;
+                case 11:
+                    printf("Food Court -> Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2");
+                    return 0;
+                case 12:
+                    printf("Food Court -> Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3");
+                    return 0;
+                case 3:
+                    printf("Food Court -> Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco");
+                    return 0;
+            }
+            printf("Food Court -> Main Gate -> Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco -> Gandhi Chowk");
+            break;
+
+        case 3:
+            switch(end)
+            {
+                case 12:
+                    printf("Frisco -> Block 3");
+                    return 0;
+                case 11:
+                    printf("Frisco -> Block 3 -> Block 2");
+                    return 0;
+                case 10:
+                    printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 1");
+                    return 0;
+                case 4:
+                    printf("Frisco -> Block 3 -> Block 2 -> Chai Garam");
+                    return 0;
+                case 13:
+                    printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4");
+                    return 0;
+                case 14:
+                    printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5");
+                    return 0;
+                case 21:
+                    printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble");
+                    return 0;
+                case 1:
+                    printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate");
+                    return 0;
+                case 2:
+                    printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate -> Food Court");
+                    return 0;
+                case 9:
+                    printf("Frisco -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Frisco -> Gandhi Chowk");
+            break;
+
+        case 4:
+            switch(end)
+            {
+                case 10:
+                    printf("Chai Garam -> Block 1");
+                    return 0;
+                case 11:
+                    printf("Chai Garam -> Block 2");
+                    return 0;
+                case 12:
+                    printf("Chai Garam -> Block 2 -> Block 3");
+                    return 0;
+                case 3:
+                    printf("Chai Garam -> Block 2 -> Block 3 -> Frisco");
+                    return 0;
+                case 13:
+                    printf("Chai Garam -> Block 4");
+                    return 0;
+                case 14:
+                    printf("Chai Garam -> Block 4 -> Block 5");
+                    return 0;
+                case 21:
+                    printf("Chai Garam -> Block 4 -> Block 5 -> Hubble");
+                    return 0;
+                case 1:
+                    printf("Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate");
+                    return 0;
+                case 2:
+                    printf("Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate -> Food Court");
+                    return 0;
+            }
+            printf("Chai Garam -> Block 2 -> Block 3 -> Frisco -> Gandhi Chowk");
+            break;
+
+        case 5:
+            printf("Tulip -> Gandhi Chowk");
+            break;
+
+        case 6:
+            switch(end)
+            {
+                case 17:
+                    printf("Team Orange -> Block 8");
+                    return 0;
+                case 9:
+                    printf("Team Orange -> Block 8 -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Team Orange -> Block 8 -> Gandhi Chowk");
+            break;
+
+        case 7:
+            switch(end)
+            {
+                case 8:
+                    printf("Girls Hostel -> Boys Hostel");
+                    return 0;
+                case 9:
+                    printf("Girls Hostel -> Boys Hostel -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Girls Hostel -> Boys Hostel -> Gandhi Chowk");
+            break;
+
+        case 8:
+            switch(end)
+            {
+                case 7:
+                    printf("Boys Hostel -> Girls Hostel");
+                    return 0;
+                case 9:
+                    printf("Boys Hostel -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Boys Hostel -> Gandhi Chowk");
+            break;
+
+        case 9:
+            printf("Gandhi Chowk");
+            break;
+
+        case 10:
+            switch(end)
+            {
+                case 4:
+                    printf("Block 1 -> Chai Garam");
+                    return 0;
+                case 11:
+                    printf("Block 1 -> Chai Garam -> Block 2");
+                    return 0;
+                case 12:
+                    printf("Block 1 -> Chai Garam -> Block 2 -> Block 3");
+                    return 0;
+                case 3:
+                    printf("Block 1 -> Chai Garam -> Block 2 -> Block 3 -> Frisco");
+                    return 0;
+                case 13:
+                    printf("Block 1 -> Chai Garam -> Block 4");
+                    return 0;
+                case 14:
+                    printf("Block 1 -> Chai Garam -> Block 4 -> Block 5");
+                    return 0;
+                case 21:
+                    printf("Block 1 -> Chai Garam -> Block 4 -> Block 5 -> Hubble");
+                    return 0;
+                case 1:
+                    printf("Block 1 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate");
+                    return 0;
+                case 2:
+                    printf("Block 1 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate -> Food Court");
+                    return 0;
+            }
+            printf("Block 1 -> Chai Garam -> Block 2 -> Block 3 -> Frisco -> Gandhi Chowk");
+            break;
+
+        case 11:
+            switch(end)
+            {
+                case 4:
+                    printf("Block 2 -> Chai Garam");
+                    return 0;
+                case 10:
+                    printf("Block 2 -> Chai Garam -> Block 1");
+                    return 0;
+                case 12:
+                    printf("Block 2 -> Block 3");
+                    return 0;
+                case 3:
+                    printf("Block 2 -> Block 3 -> Frisco");
+                    return 0;
+                case 13:
+                    printf("Block 2 -> Chai Garam -> Block 4");
+                    return 0;
+                case 14:
+                    printf("Block 2 -> Chai Garam -> Block 4 -> Block 5");
+                    return 0;
+                case 21:
+                    printf("Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble");
+                    return 0;
+                case 1:
+                    printf("Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate");
+                    return 0;
+                case 2:
+                    printf("Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate -> Food Court");
+                    return 0;
+            }
+            printf("Block 2 -> Block 3 -> Frisco -> Gandhi Chowk");
+            break;
+
+        case 12:
+            switch(end)
+            {
+                case 3:
+                    printf("Block 3 -> Frisco");
+                    return 0;
+                case 11:
+                    printf("Block 3 -> Block 2");
+                    return 0;
+                case 4:
+                    printf("Block 3 -> Block 2 -> Chai Garam");
+                    return 0;
+                case 10:
+                    printf("Block 3 -> Block 2 -> Chai Garam -> Block 1");
+                    return 0;
+                case 13:
+                    printf("Block 3 -> Block 2 -> Chai Garam -> Block 4");
+                    return 0;
+                case 14:
+                    printf("Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5");
+                    return 0;
+                case 21:
+                    printf("Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble");
+                    return 0;
+                case 1:
+                    printf("Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate");
+                    return 0;
+                case 2:
+                    printf("Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate -> Food Court");
+                    return 0;
+            }
+            printf("Block 3 -> Frisco -> Gandhi Chowk");
+            break;
+
+        case 13:
+            switch(end)
+            {
+                case 4:
+                    printf("Block 4 -> Chai Garam");
+                    return 0;
+                case 10:
+                    printf("Block 4 -> Chai Garam -> Block 1");
+                    return 0;
+                case 11:
+                    printf("Block 4 -> Chai Garam -> Block 2");
+                    return 0;
+                case 12:
+                    printf("Block 4 -> Chai Garam -> Block 2 -> Block 3");
+                    return 0;
+                case 3:
+                    printf("Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco");
+                    return 0;
+                case 14:
+                    printf("Block 4 -> Block 5");
+                    return 0;
+                case 21:
+                    printf("Block 4 -> Block 5 -> Hubble");
+                    return 0;
+                case 1:
+                    printf("Block 4 -> Block 5 -> Hubble -> Main Gate");
+                    return 0;
+                case 2:
+                    printf("Block 4 -> Block 5 -> Hubble -> Main Gate -> Food Court");
+                    return 0;
+            }
+            printf("Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco -> Gandhi Chowk");
+            break;
+
+        case 14:
+            switch(end)
+            {
+                case 13:
+                    printf("Block 5 -> Block 4");
+                    return 0;
+                case 21:
+                    printf("Block 5 -> Hubble");
+                    return 0;
+                case 1:
+                    printf("Block 5 -> Hubble -> Main Gate");
+                    return 0;
+                case 2:
+                    printf("Block 5 -> Hubble -> Main Gate -> Food Court");
+                    return 0;
+                case 4:
+                    printf("Block 5 -> Block 4 -> Chai Garam");
+                    return 0;
+                case 10:
+                    printf("Block 5 -> Block 4 -> Chai Garam -> Block 1");
+                    return 0;
+                case 11:
+                    printf("Block 5 -> Block 4 -> Chai Garam -> Block 2");
+                    return 0;
+                case 12:
+                    printf("Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3");
+                    return 0;
+                case 3:
+                    printf("Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco");
+                    return 0;
+            }
+            printf("Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco -> Gandhi Chowk");
+            break;
+
+        case 15:
+            switch(end)
+            {
+                case 16:
+                    printf("Block 6 -> Block 7");
+                    return 0;
+                case 9:
+                    printf("Block 6 -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Block 6 -> Gandhi Chowk");
+            break;
+
+        case 16:
+            switch(end)
+            {
+                case 15:
+                    printf("Block 7 -> Block 6");
+                    return 0;
+                case 9:
+                    printf("Block 7 -> Block 6 -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Block 7 -> Block 6 -> Gandhi Chowk");
+            break;
+
+        case 17:
+            switch(end)
+            {
+                case 6:
+                    printf("Block 8 -> Team Orange");
+                    return 0;
+                case 9:
+                    printf("Block 8 -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Block 8 -> Gandhi Chowk");
+            break;
+
+        case 18:
+            switch(end)
+            {
+                case 19:
+                    printf("Block 9 -> Block 10");
+                    return 0;
+                case 20:
+                    printf("Block 9 -> Block 10 -> Block 11");
+                    return 0;
+                case 9:
+                    printf("Block 9 -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Block 9 -> Gandhi Chowk");
+            break;
+
+        case 19:
+            switch(end)
+            {
+                case 18:
+                    printf("Block 10 -> Block 9");
+                    return 0;
+                case 20:
+                    printf("Block 10 -> Block 11");
+                    return 0;
+                case 9:
+                    printf("Block 10 -> Block 9 -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Block 10 -> Block 9 -> Gandhi Chowk");
+            break;
+
+        case 20:
+            switch(end)
+            {
+                case 19:
+                    printf("Block 11 -> Block 10");
+                    return 0;
+                case 18:
+                    printf("Block 11 -> Block 10 -> Block 9");
+                    return 0;
+                case 9:
+                    printf("Block 11 -> Block 10 -> Block 9 -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Block 11 -> Block 10 -> Block 9 -> Gandhi Chowk");
+            break;
+
+        case 21:
+            switch(end)
+            {
+                case 1:
+                    printf("Hubble -> Main Gate");
+                    return 0;
+                case 2:
+                    printf("Hubble -> Main Gate -> Food Court");
+                    return 0;
+                case 14:
+                    printf("Hubble -> Block 5");
+                    return 0;
+                case 13:
+                    printf("Hubble -> Block 5 -> Block 4");
+                    return 0;
+                case 4:
+                    printf("Hubble -> Block 5 -> Block 4 -> Chai Garam");
+                    return 0;
+                case 10:
+                    printf("Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 1");
+                    return 0;
+                case 11:
+                    printf("Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2");
+                    return 0;
+                case 12:
+                    printf("Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3");
+                    return 0;
+                case 3:
+                    printf("Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco");
+                    return 0;
+            }
+            printf("Hubble -> Block 5 -> Block 4 -> Chai Garam -> Block 2 -> Block 3 -> Frisco -> Gandhi Chowk");
+            break;
+
+        case 22:
+            switch(end)
+            {
+                case 9:
+                    printf("Lab -> Gandhi Chowk");
+                    return 0;
+            }
+            printf("Lab -> Gandhi Chowk");
+            break;
+    }
+
+    if(end != 9)
+    {
+        printf(" -> ");
+
+        switch(end)
+        {
+            case 1:
+                printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate");
+                break;
+
+            case 2:
+                printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble -> Main Gate -> Food Court");
+                break;
+
+            case 3:
+                printf("Frisco");
+                break;
+
+            case 4:
+                printf("Frisco -> Block 3 -> Block 2 -> Chai Garam");
+                break;
+
+            case 5:
+                printf("Tulip");
+                break;
+
+            case 6:
+                printf("Block 8 -> Team Orange");
+                break;
+
+            case 7:
+                printf("Boys Hostel -> Girls Hostel");
+                break;
+
+            case 8:
+                printf("Boys Hostel");
+                break;
+
+            case 10:
+                printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 1");
+                break;
+
+            case 11:
+                printf("Frisco -> Block 3 -> Block 2");
+                break;
+
+            case 12:
+                printf("Frisco -> Block 3");
+                break;
+
+            case 13:
+                printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4");
+                break;
+
+            case 14:
+                printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5");
+                break;
+
+            case 15:
+                printf("Block 6");
+                break;
+
+            case 16:
+                printf("Block 6 -> Block 7");
+                break;
+
+            case 17:
+                printf("Block 8");
+                break;
+
+            case 18:
+                printf("Block 9");
+                break;
+
+            case 19:
+                printf("Block 9 -> Block 10");
+                break;
+
+            case 20:
+                printf("Block 9 -> Block 10 -> Block 11");
+                break;
+            case 21:
+                printf("Frisco -> Block 3 -> Block 2 -> Chai Garam -> Block 4 -> Block 5 -> Hubble");
+                break;
+
+            case 22:
+                printf("Lab");
+                break;
+        }
+    }
+
+    printf("\n\n====================================\n");
+    printf("       DESTINATION REACHED!\n");
+    printf("====================================\n");
+
+    return 0;
+}
